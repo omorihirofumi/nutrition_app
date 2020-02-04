@@ -1,0 +1,301 @@
+body{
+  
+  
+  background-color:black;
+  height: 100%;
+  width: 100%;
+}
+
+.header{
+  height: 100px;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+  margin: 0 auto;
+  border: solid 5px white;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-style:oblique;
+  font-family:cursive;
+}
+
+li{
+  list-style: none;
+  padding: 0 45px;
+  
+}
+
+.btn{
+}
+
+.text-content{
+  display: none;
+  font-size: 12px;
+}
+
+.text-active{
+  display: block;
+  position: absolute;
+
+}
+
+
+
+
+.main{
+  background-size: contain;
+  object-fit: cover;
+  margin: 0 auto;
+  height: 700px;
+  width: 930px;
+  background-image: url("https://www.anytimefitness.co.jp/wp/wp-content/uploads/2019/03/s_IMG_1593-1.jpg");
+}
+
+
+
+#hoge{
+  font-size: 50px;
+  color:yellow;
+  height: 700px;
+  width: 930px;
+  background: linear-gradient(#05FBFF, #1E00FF);
+  box-shadow: inset 0 0 15px 15px black;
+  font-style:oblique;
+  font-family:cursive;
+  padding-top: 200px;
+}
+
+footer{
+  background-color: black;
+  height: 10px;
+  width: 100%;
+
+}
+
+.contain{
+  display: flex;
+  margin-top: 50px;
+}
+
+
+.profile{
+  color: white;
+  border: solid 5px white;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  height: 600px;
+  width: 330px;
+  font-size: 20px;
+}
+
+.profile-content{
+  padding-top: 30px;
+  line-height: 50px;
+  font-style:oblique;
+  font-family:cursive;
+}
+
+.right-content{
+  
+}
+
+.pfc{
+  color: white;
+  border: solid 5px white;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  height: 279px;
+  width: 480px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.pfcsheet{
+  height: 100px;
+  
+}
+
+.ingredient{
+  height: 30px;
+  font-size: 20px;
+  margin-left: 5px;
+  width:500;
+}
+
+.protein{
+  height: 20px;
+  font-size: 14px;
+  margin-left:5px;
+  width: 60px;
+}
+
+.carbo{
+  height: 20px;
+  font-size: 14px;
+  width:60px;
+}
+
+.fat{
+  height: 20px;
+  font-size: 14px;
+  width: 60px;
+}
+
+.send{
+  height: 50px;
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.hard{
+  display: flex;
+}
+
+.hard-protein{
+  padding-left: 42px;
+}
+
+.hard-carbo{
+  padding-left: 42px;
+  
+}
+
+.hard-fat{
+  padding-left: 42px;
+  
+}
+
+.normal{
+  display: flex;
+}
+
+.normal-protein{
+  padding-left: 42px;
+}
+
+.normal-carbo{
+  padding-left: 42px;
+}
+
+.normal-fat{
+  padding-left: 42px;
+}
+
+.easy{
+  display: flex;
+}
+
+.easy-protein{
+  padding-left: 42px;
+}
+
+.easy-carbo{
+  padding-left: 42px;
+}
+
+.easy-fat{
+  padding-left: 42px;
+}
+
+
+
+
+
+
+.chart{
+  border: solid 5px white;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin-left: 20px;
+  height: 279px;
+  
+}
+
+.container{
+  font-size: 40px;
+  font-style:oblique;
+  font-family:cursive;
+  color: white;
+  margin-left: 500px;
+}
+h2{
+  margin-left: 150px;
+}
+
+.field{
+  font-size: 30px;
+  font-style:oblique;
+  font-family:cursive;
+  
+}
+
+#user_name{
+  border: solid 1px black;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  height: 30px;
+  width: 500px;
+  font-size: 20px;
+}
+
+#user_email{
+  border: solid 1px black;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  height: 30px;
+  width: 500px;
+  font-size: 20px;
+}
+
+#user_password{
+  border: solid 1px black;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  height: 30px;
+  width: 500px;
+  font-size: 20px;
+}
+
+
+#user_password_confirmation{
+  border: solid 1px black;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  height: 30px;
+  width: 500px;
+  font-size: 20px;
+}
+
+#user_remember_me{
+  
+}
+
+.actions{
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+}
+
+
+.bbb{
+  font-size: 30px;
+  width: 50px;
+  height: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: white;
+  border: solid 1px black;
+  padding: 0.5em;
+  border-radius: 25em;
+  border-bottom: solid 4px #627295;
+}
+
+
+
+
+
+

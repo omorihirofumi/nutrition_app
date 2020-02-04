@@ -1,0 +1,91 @@
+<div class="contain">
+  <div class="profile">
+    <div class="profile-content">
+      <li>
+      name：Daniel
+      </li>
+      <li>
+      age：28
+      </li>
+      <li>
+      sex：male
+      </li>
+      <li>
+      height：179
+      </li>
+      <li>
+      weight：73
+      </li>
+      <li>
+      start weight：77
+      </li>
+      <li>
+      target weight：62
+      </li>
+      <li>
+      BMR：1800
+      </li>
+      <li>
+      activelevel：1.3
+      </li>
+      <li>
+      Total calories burned：2400
+      </li>
+    </div>
+  </div>
+
+  <div class="right-content">
+    <div class="pfc">
+      <div class="pfcsheet">
+        <%= form_with url:"" do |form| %>
+          <%= form.text_field:text, placeholder:"ingredient",class:"ingredient" %>
+          <%= form.number_field:gram, placeholder:"protein", class:"protein" %>
+          <%= form.number_field:gram, placeholder:"carbo",class:"carbo" %>
+          <%= form.number_field:gram, placeholder:"fat",class:"fat" %>
+          <%= form.submit class:"send" %>
+        <% end %>
+      </div>
+      <div class="mode">
+        <div class="hard">
+          ハーード(約3.0kg 減/月):
+          <div class="hard-protein">
+            160
+          </div>
+          <div class="hard-carbo">
+            160
+          </div>
+          <div class="hard-fat">
+            40
+          </div>
+        </div >
+        <div class="normal">
+          ノーマル(約2.1kg 減/月):
+          <div class="normal-protein">
+            180
+          </div>
+          <div class="normal-carbo">
+            180
+          </div>
+          <div class="normal-fat">
+            45
+          </div>
+        </div>
+        <div class="easy">
+          イージー(約1.3kg 減/月):
+          <div class="easy-protein">
+            200
+          </div>
+          <div class="easy-carbo">
+            200
+          </div>
+          <div class="easy-fat">
+            50
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="chart">
+      <%= line_chart @data, width: "1000px", height: "300px", min:60, max:80 %>
+    </div>
+  
+</div>

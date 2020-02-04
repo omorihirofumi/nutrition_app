@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NutritionApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+   
+   <div class="all">
+     <div class="header">
+      <li>
+       <%= link_to('Daniel','/home/new') %>
+      </li>
+      <li>
+       Lv.56
+      </li>
+      <li>
+       <%= link_to('topage','/') %>
+      </li>
+      <li id="btn">
+       Trivia
+       <div class="text-content">
+        <p>
+         trivia1
+        </p>
+        <p>
+         tribia2
+        </p>
+        <p>
+         trivia3
+        </p>
+        <p>
+         tribia4
+        </p>
+        <p>
+         tribia5
+        </P>
+        <p>
+        tribia6
+        </p>
+        <p>
+        tribia7
+        </p>
+        <p>
+        tribia8
+        </p>
+
+       </div>
+      </li>
+      <li>
+      <p>
+       <%= link_to "Signup",new_user_registration_path %>
+      </p>
+      <P>
+       <%= link_to "Login",new_user_session_path %>
+      </p>
+      <p>
+       <%= link_to "Logout",destroy_user_session_path, method: :delete %>
+      </p>
+      </li>
+    </div>
+   </div>
+
+   <script>
+       $('#btn').hover(
+     function(){
+       $(this).find('.text-content').addClass('text-active');
+     },
+     function(){
+       $(this).find('.text-content').removeClass('text-active');
+     }
+   );
+   </script>
+
+   
+  
+  
+   <%# <footer></footer> %>
+
+    <%= yield %>
+  </body>
+</html>
