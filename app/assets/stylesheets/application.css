@@ -98,8 +98,16 @@ footer{
   font-size: 20px;
 }
 
+.profile-good{
+  font-style:oblique;
+  font-family:cursive;
+  color: white;
+  font-size: 30px;
+  margin-left: 40px;
+}
+
 .profile-content{
-  padding-top: 30px;
+  padding-top: 15px;
   line-height: 50px;
   font-style:oblique;
   font-family:cursive;
