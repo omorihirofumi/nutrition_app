@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   get 'calendar/index'
   
   resources :home, only: [:top, :new, :tribia1]
-  resources :profile, only: :all
+  resources :profile
   resources :blogs
 
   

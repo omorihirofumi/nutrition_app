@@ -1,4 +1,4 @@
 class ProfileController < ApplicationController
-  def all
+  def new
   end
 end

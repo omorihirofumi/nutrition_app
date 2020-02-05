@@ -1,5 +1,6 @@
 <div class="contain">
   <div class="profile">
+    <%= link_to('Profile','/profile/new') %>
     <div class="profile-content">
       <li>
       name：Daniel
@@ -79,7 +80,9 @@
             200
           </div>
           <div class="easy-fat">
-            50
+            <% require 'date' %>
+            <%= (Date.today.strftime("%Y%m%d").to_i - 19960226)/10000.floor %>
+            
           </div>
         </div>
       </div>

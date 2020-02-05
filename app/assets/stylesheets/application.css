@@ -1,6 +1,10 @@
+/*
+*= require_tree .
+*= require_self
+*/
+
+
 body{
-  
-  
   background-color:black;
   height: 100%;
   width: 100%;
@@ -75,6 +79,8 @@ footer{
   width: 100%;
 
 }
+
+
 
 .contain{
   display: flex;
@@ -215,6 +221,7 @@ footer{
   
 }
 
+
 .container{
   font-size: 40px;
   font-style:oblique;
@@ -293,9 +300,5 @@ h2{
   border-radius: 25em;
   border-bottom: solid 4px #627295;
 }
-
-
-
-
 
 

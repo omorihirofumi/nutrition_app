@@ -1,0 +1,196 @@
+.profile-sheet{
+  font-size: 50px;
+  font-style:oblique;
+  font-family:cursive;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  margin-left: 600px;
+  color: white;
+  
+
+}
+
+
+.profile-form{
+  font-size: 15px;
+  margin-left: 260px;
+
+}
+
+.birthday{
+  font-size: 20px;
+  border: solid 1px black;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  font-style:oblique;
+  font-family:cursive;
+  width: 200px;
+  height: 30px;
+  }
+
+.birthday-ex{
+    font-style:oblique;
+    font-family:cursive;
+    margin-left: 260px;
+    color: white;
+  }
+  
+#sex{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 20px;
+  border: solid 1px black;
+  padding: 0.5em;
+  border-radius: 0.3em;
+  font-style:oblique;
+  font-family:cursive;
+  width: 222px;
+  height: 54px;
+  }
+
+  .height{
+    font-size: 20px;
+    border: solid 1px black;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    font-style:oblique;
+    font-family:cursive;
+    width: 200px;
+    height: 30px;
+  }
+
+  .weight{
+    font-size: 20px;
+    border: solid 1px black;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    font-style:oblique;
+    font-family:cursive;
+    width: 200px;
+    height: 30px;
+  }
+
+  .startWeight{
+    font-size: 20px;
+    border: solid 1px black;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    font-style:oblique;
+    font-family:cursive;
+    width: 200px;
+    height: 30px;
+  }
+
+  .targetWeight{
+    font-size: 20px;
+    border: solid 1px black;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    font-style:oblique;
+    font-family:cursive;
+    width: 200px;
+    height: 30px;
+  }
+
+  #activeLevel{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 20px;
+    border: solid 1px black;
+    padding: 0.5em;
+    border-radius: 0.3em;
+    font-style:oblique;
+    font-family:cursive;
+    width: 222px;
+    height: 54px;
+  }
+
+  .save{
+    border: solid 1px black;
+    padding: 0.5em;
+    border-radius: 30em;
+    font-style:oblique;
+    font-family:cursive;
+    border-bottom: solid 4px #627295;
+    margin-left: 20px;
+    width: 50px;
+    height: 40px;
+  }
+
+  .active-level-box{
+    height: 200px;
+    width: 1430px;
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+  }
+
+  .walk-box{
+    height: 200px;
+    width: 300px;
+    }
+    .walk-box-up{
+      height: 50px;
+      width: 300px;
+      font-size: 40px;
+      font-style:oblique;
+      font-family:cursive;
+      
+    }
+    .walk-box-down{
+      display: none;
+      height: 150px;
+      width: 300px;
+      font-size: 20px;
+      text-align: left;
+      margin-top: 20px;
+    }
+
+    .text-active{
+      display: block;
+    }
+
+    .run-box{
+      height: 200px;
+      width: 300px;
+      }
+      .run-box-up{
+        height: 50px;
+        width: 300px;
+        font-size: 40px;
+        font-style:oblique;
+        font-family:cursive;
+      }
+      .run-box-down{
+        display: none;
+        height: 150px;
+        width: 300px;
+        font-size: 20px;
+        text-align: left;  
+        margin-top: 20px;
+      }
+
+      .dash-box{
+        height: 200px;
+        width: 300px;
+    
+        }
+        .dash-box-up{
+          height: 50px;
+          width: 300px;
+          font-size: 40px;
+          font-style:oblique;
+          font-family:cursive;
+        }
+        .dash-box-down{
+          display: none;
+          height: 150px;
+          width: 300px;
+          font-size: 20px;
+          text-align: left;
+          margin-top: 20px;
+        }
