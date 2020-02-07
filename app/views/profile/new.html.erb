@@ -5,7 +5,7 @@
        ※e.g. :August27,1991⇨19910827
      </p>
       <div class="profile-form">  
-        <%= form_with  model:@profile do |form| %>
+        <%= form_with(model: @profile, local:true) do |form| %>
           <div class="up-content">
             <%= form.number_field:birthday, placeholder:"birthday",class:"birthday" %>
             <%= form.select:sex,[['Male','Male'], ['Female', 'Female']], id:"sex"  %>

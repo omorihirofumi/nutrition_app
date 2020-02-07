@@ -80,10 +80,8 @@ class HomeController < ApplicationController
   end
 
  def new
-  @data = [['2019-06-01', 78.5.round(1)], ['2019-06-02', 73], ['2019-06-03', 70], ['2019-06-04', 65]]
- end
-
- def tribia1
+  @data = [['2019-06-01', 77.round(1)], ['2019-06-02', 73], ['2019-06-03', 70], ['2019-06-04', 68]]
+  @profiles = Profile.all
  end
 
 

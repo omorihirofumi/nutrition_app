@@ -133,11 +133,69 @@ footer{
   
 }
 
+.pfc-btn{
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-style:oblique;
+  font-family:cursive;
+}
+
+.hard-btn{
+  margin-left: 50px;
+  border: solid 1px black;
+  padding: 0.5em;
+  border-radius: 30em;
+  font-style:oblique;
+  font-family:cursive;
+  border-bottom: solid 4px #627295;
+  width: 75px;
+  height: 25px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+}
+
+.normal-btn{
+  margin-left: 50px;
+  border: solid 1px black;
+  padding: 0.5em;
+  border-radius: 30em;
+  font-style:oblique;
+  font-family:cursive;
+  border-bottom: solid 4px #627295;
+  width: 75px;
+  height: 25px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+}
+
+.easy-btn{
+  margin-left: 50px;
+  border: solid 1px black;
+  padding: 0.5em;
+  border-radius: 30em;
+  font-style:oblique;
+  font-family:cursive;
+  border-bottom: solid 4px #627295;
+  width: 75px;
+  height: 25px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  text-align: center;
+}
+
 .ingredient{
   height: 30px;
-  font-size: 20px;
+  font-size: 16px;
   margin-left: 5px;
-  width:500;
+  width:400;
+  font-style:oblique;
+  font-family:cursive;
 }
 
 .protein{
@@ -145,24 +203,36 @@ footer{
   font-size: 14px;
   margin-left:5px;
   width: 60px;
+  font-style:oblique;
+  font-family:cursive;
 }
 
 .carbo{
   height: 20px;
   font-size: 14px;
   width:60px;
+  font-style:oblique;
+  font-family:cursive;
 }
 
 .fat{
   height: 20px;
   font-size: 14px;
   width: 60px;
+  font-style:oblique;
+  font-family:cursive;
 }
 
-.send{
-  height: 50px;
-  font-size: 20px;
-  margin-left: 5px;
+.send{ 
+    padding: 0.5em;
+    border-radius: 30em;
+    font-style:oblique;
+    font-family:cursive;
+    border-bottom: solid 4px #627295;
+    margin-left: 10px;
+    width: 60px;
+    height: 40px;
+    cursor: pointer;
 }
 
 .hard{

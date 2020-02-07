@@ -35,7 +35,7 @@
     color: white;
   }
   
-#sex{
+#profile_sex{
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -93,7 +93,7 @@
     height: 30px;
   }
 
-  #activeLevel{
+  #profile_activeLevel{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -115,7 +115,7 @@
     font-family:cursive;
     border-bottom: solid 4px #627295;
     margin-left: 20px;
-    width: 50px;
+    width: 80px;
     height: 40px;
   }
 
