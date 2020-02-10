@@ -5,7 +5,7 @@
 
 
 body{
-  background-color:black;
+  background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRHH9PKUvbnypvo2EKtNn5uFnBlG0LKSZoMEABDm8iDPp1vIkRZ);
   height: 100%;
   width: 100%;
 }
@@ -47,9 +47,6 @@ li{
 
 }
 
-
-
-
 .main{
   background-size: contain;
   object-fit: cover;
@@ -59,14 +56,12 @@ li{
   background-image: url("https://www.anytimefitness.co.jp/wp/wp-content/uploads/2019/03/s_IMG_1593-1.jpg");
 }
 
-
-
 #hoge{
   font-size: 50px;
   color:yellow;
   height: 700px;
   width: 930px;
-  background: linear-gradient(#05FBFF, #1E00FF);
+  background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRHH9PKUvbnypvo2EKtNn5uFnBlG0LKSZoMEABDm8iDPp1vIkRZ);
   box-shadow: inset 0 0 15px 15px black;
   font-style:oblique;
   font-family:cursive;
@@ -80,13 +75,10 @@ footer{
 
 }
 
-
-
 .contain{
   display: flex;
   margin-top: 50px;
 }
-
 
 .profile{
   color: white;
@@ -117,6 +109,10 @@ footer{
   
 }
 
+.up-content{
+  display: flex;
+}
+
 .pfc{
   color: white;
   border: solid 5px white;
@@ -129,19 +125,19 @@ footer{
 }
 
 .pfcsheet{
-  height: 100px;
+  height: 65px;
   
 }
 
 .pfc-btn{
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   margin-top: 20px;
   font-style:oblique;
   font-family:cursive;
 }
 
-.hard-btn{
+.three-btn{
   margin-left: 50px;
   border: solid 1px black;
   padding: 0.5em;
@@ -157,36 +153,36 @@ footer{
   text-align: center;
 }
 
-.normal-btn{
-  margin-left: 50px;
-  border: solid 1px black;
-  padding: 0.5em;
-  border-radius: 30em;
-  font-style:oblique;
-  font-family:cursive;
-  border-bottom: solid 4px #627295;
-  width: 75px;
-  height: 25px;
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  text-align: center;
+.advise{
+  display: flex;
+  margin-bottom: 25px;
 }
 
-.easy-btn{
-  margin-left: 50px;
-  border: solid 1px black;
-  padding: 0.5em;
-  border-radius: 30em;
+.hard-advise{
+  margin-left: 35px;
+}
+
+.normal-advise{
+  margin-left: 30px;
+}
+
+.easy-advise{
+  margin-left: 30px;
+}
+
+.search{
+  color: white;
+  margin-left: 20px;
+}
+
+.form-date{
+  height: 30px;
+  font-size: 16px;
+  margin-left: 5px;
+  width:400;
   font-style:oblique;
   font-family:cursive;
-  border-bottom: solid 4px #627295;
-  width: 75px;
-  height: 25px;
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  text-align: center;
+  border-radius: 0.3em;
 }
 
 .ingredient{
@@ -196,15 +192,17 @@ footer{
   width:400;
   font-style:oblique;
   font-family:cursive;
+  border-radius: 0.3em;
 }
 
 .protein{
   height: 20px;
   font-size: 14px;
-  margin-left:5px;
+  margin-left:175px;
   width: 60px;
   font-style:oblique;
   font-family:cursive;
+  border-radius: 0.3em;
 }
 
 .carbo{
@@ -213,6 +211,7 @@ footer{
   width:60px;
   font-style:oblique;
   font-family:cursive;
+  border-radius: 0.3em;
 }
 
 .fat{
@@ -221,6 +220,7 @@ footer{
   width: 60px;
   font-style:oblique;
   font-family:cursive;
+  border-radius: 0.3em;
 }
 
 .send{ 
@@ -235,54 +235,86 @@ footer{
     cursor: pointer;
 }
 
+.modes{
+  font-style:oblique;
+  font-family:cursive;
+  font-size: 20px;
+}
+
+.modes{
+  margin-top: 15px;
+}
+
+.mode{
+  display: none;
+}
+
+.active{
+  display: block;
+}
+
 .hard{
   display: flex;
+  margin-left: 60px;
 }
 
 .hard-protein{
-  padding-left: 42px;
+  padding-left: 55px;
 }
 
 .hard-carbo{
-  padding-left: 42px;
+  padding-left: 37px;
   
 }
 
 .hard-fat{
-  padding-left: 42px;
+  padding-left: 37px;
   
 }
 
 .normal{
   display: flex;
+  margin-left: 60px;
 }
 
 .normal-protein{
-  padding-left: 42px;
+  padding-left: 55px;
 }
 
 .normal-carbo{
-  padding-left: 42px;
+  padding-left: 37px;
 }
 
 .normal-fat{
-  padding-left: 42px;
+  padding-left: 37px;
 }
 
 .easy{
   display: flex;
+  margin-left: 60px;
 }
 
 .easy-protein{
-  padding-left: 42px;
+  padding-left: 55px;
 }
 
 .easy-carbo{
-  padding-left: 42px;
+  padding-left: 37px;
 }
 
 .easy-fat{
-  padding-left: 42px;
+  padding-left: 37px;
+}
+
+.calendar{
+  color: white;
+  border: solid 5px white;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  height: 279px;
+  width: 480px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 

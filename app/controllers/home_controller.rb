@@ -80,10 +80,20 @@ class HomeController < ApplicationController
   end
 
  def new
+  @balancesheet = Balancesheet.new
   @data = [['2019-06-01', 77.round(1)], ['2019-06-02', 73], ['2019-06-03', 70], ['2019-06-04', 68]]
   @profiles = Profile.all
+  @balancesheets = Balancesheet.all
  end
 
+ def create
+  Balancesheet.create!(balancesheet_params)
+  redirect_to root_path
+end
 
+private
+def balancesheet_params
+  params.permit(:ingredient, :protein, :carbo, :fat).merge(user_id: current_user.id)
+end
 
 end

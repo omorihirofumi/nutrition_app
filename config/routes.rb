@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   
   # get 'calendar/index'
   
-  resources :home, as: :homes, only: [:new] do
+  resources :home, as: :homes, only: [:new, :create] do
     collection do
       get :top
     end
