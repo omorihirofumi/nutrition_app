@@ -59,7 +59,7 @@
       </div>
       <div class="pfcsheet">
         <%= form_with(url:"/home", local:true) do |form| %>
-          <%= date_field_tag 'balancesheet[date]', nil,class:"form-date" %>
+          <%= form.date_field:time,class:"form-date" %>
           <%= form.text_field:ingredient, placeholder:"ingredient",class:"ingredient" %>
           <div>
           <%= form.number_field:protein, placeholder:"protein", class:"protein" %>

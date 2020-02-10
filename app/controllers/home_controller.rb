@@ -93,7 +93,7 @@ end
 
 private
 def balancesheet_params
-  params.permit(:ingredient, :protein, :carbo, :fat).merge(user_id: current_user.id)
+  params.permit(:time, :ingredient, :protein, :carbo, :fat).merge(user_id: current_user.id)
 end
 
 end
