@@ -1,91 +1,182 @@
 <div class="contain">
+ <% @profiles.each do |profile| %>
   <div class="profile">
+    <%= link_to('Profile','/profile/new', class:"profile-good") %>
     <div class="profile-content">
       <li>
       name：Daniel
+      </li> 
+      <li>
+        <% require 'date' %>
+        <% @age = (Date.today.strftime("%Y%m%d").to_i - profile.birthday)/10000.floor %>
+        age：<%= @age %>
       </li>
       <li>
-      age：28
+      sex：<%= profile.sex %>
       </li>
       <li>
-      sex：male
+      height：<%= profile.height %> cm
       </li>
       <li>
-      height：179
+      weight：<%= profile.weight %> kg
       </li>
       <li>
-      weight：73
+      start weight：<%= profile.startWeight %> kg
       </li>
       <li>
-      start weight：77
+      target weight：<%= profile.targetWeight %> kg
       </li>
       <li>
-      target weight：62
+      <% @BMR = 13.397 * profile.weight + 4.799 * profile.height - 5.677 * @age + 88.362 %>
+      BMR：<%= @BMR.floor %> kcal
       </li>
       <li>
-      BMR：1800
+      <% @activeLevel = profile.activeLevel.to_f %>
+      activelevel：<%= @activeLevel %>
       </li>
       <li>
-      activelevel：1.3
-      </li>
-      <li>
-      Total calories burned：2400
+      <% @total = @BMR * @activeLevel %>
+      Calories burned：<%= @total.floor %> kcal
       </li>
     </div>
   </div>
 
   <div class="right-content">
+   <div class="up-content">
     <div class="pfc">
+      <div class="pfc-btn">
+        <div class="three-btn">HARD</div>
+        <div class="three-btn">NORMAL</div>
+        <div class="three-btn">EASY</div>
+      </div>
+      <div class="advise">
+       <div class="hard-advise">(約3.0kg 減/月)</div>
+       <div class="normal-advise">(約2.1kg 減/月)</div>
+       <div class="easy-advise">(約1.3kg 減/月)</div>
+      </div>
+      <div>
+      <%= link_to '※食材検索(slism)','https://calorie.slism.jp/112004/',class:"search" %>
+      </div>
       <div class="pfcsheet">
-        <%= form_with url:"" do |form| %>
-          <%= form.text_field:text, placeholder:"ingredient",class:"ingredient" %>
-          <%= form.number_field:gram, placeholder:"protein", class:"protein" %>
-          <%= form.number_field:gram, placeholder:"carbo",class:"carbo" %>
-          <%= form.number_field:gram, placeholder:"fat",class:"fat" %>
+        <%= form_with(url:"/home", local:true) do |form| %>
+          <%= form.date_field:time,class:"form-date" %>
+          <%= form.text_field:ingredient, placeholder:"食物",class:"ingredient" %>
+          <div>
+          <%= form.number_field:protein, placeholder:"蛋白質", class:"protein" %>
+          <%= form.number_field:carbo, placeholder:"糖質",class:"carbo" %>
+          <%= form.number_field:fat, placeholder:"脂質",class:"fat" %>
           <%= form.submit class:"send" %>
+          </div>
         <% end %>
       </div>
-      <div class="mode">
-        <div class="hard">
-          ハーード(約3.0kg 減/月):
+      <div class="modes">
+       <% @balancesheets.each do |balancesheet| %>
+        <div class="mode">
+         <div class="hard">
+          <% @hardIntake = @total - 720 %>
+          <%= @hardIntake.floor %>kcal
           <div class="hard-protein">
-            160
+          <%=  (@hardIntake * 0.1).floor %>g
           </div>
           <div class="hard-carbo">
-            160
+          <%=  (@hardIntake * 0.1).floor %>g
           </div>
           <div class="hard-fat">
-            40
+          <%=  (@hardIntake * 0.022).floor %>g
           </div>
+         </div>
         </div >
+        <div class="mode">
         <div class="normal">
-          ノーマル(約2.1kg 減/月):
+        <% @normalIntake =  @total - 500 %>
+        <%= @normalIntake.floor %>kcal
           <div class="normal-protein">
-            180
+          <%= (@normalIntake * 0.088).floor %>g
           </div>
           <div class="normal-carbo">
-            180
+          <%= (@normalIntake * 0.112).floor %>g
           </div>
           <div class="normal-fat">
-            45
+          <%= (@normalIntake * 0.0225).floor %>g
           </div>
+         </div>
         </div>
-        <div class="easy">
-          イージー(約1.3kg 減/月):
+        <div class="mode">
+         <div class="easy">
+          <% @easyIntake = @total - 300 %>
+          <%= (@easyIntake).floor %>kcal
           <div class="easy-protein">
-            200
+          <%= (@easyIntake * 0.0795).floor %>g
           </div>
           <div class="easy-carbo">
-            200
+          <%= (@easyIntake * 0.1205).floor %>g
           </div>
           <div class="easy-fat">
-            50
+          <%= (@easyIntake * 0.023).floor %>g
           </div>
+         </div>
+        </div>
+       <% end %>
+      </div>
+      
+    </div>
+    <div class="calendar">
+     <div class="calendar-all">
+      <div class="between">-食物-</div>
+      <div class="between">-蛋白質-</div>
+      <div class="between">-糖質-</div>
+      <div class="between">-脂質-</div>
+     </div>
+      <% @balancesheets.each do|balancesheet| %>
+      <div class="super-between">
+        <div class="between" >
+          <%= balancesheet.ingredient%>
+        </div>
+        <div class="between">
+          <%= balancesheet.protein %>g
+        </div>
+        <div class="between">
+          <%= balancesheet.carbo %>g
+        </div>
+        <div class="between">
+          <%= balancesheet.fat %>g
         </div>
       </div>
+      <% end %>
+      <div class="super-between">
+        <div class="between sum">
+          <%= "合計" %>
+        </div>
+        <div class="between sum">
+          <%= Balancesheet.all.sum(:protein) %>g
+        </div>
+        <div class="between sum">
+          <%= Balancesheet.all.sum(:carbo) %>g
+        </div>
+        <div class="between sum">
+          <%= Balancesheet.all.sum(:fat) %>g
+        </div>
+      </div>
+      <div class="allCalorie">
+        <% @allCalorie = Balancesheet.all.sum(:protein) * 4 + Balancesheet.all.sum(:carbo) * 4 + Balancesheet.all.sum(:fat) * 9 %>
+        総摂取カロリー：<%= @allCalorie.floor %>kcal
+      </div>
     </div>
+  </div>
     <div class="chart">
-      <%= line_chart @data, width: "1000px", height: "300px", min:60, max:80 %>
+      <% @profiles.each do |profile| %>
+        <%= line_chart @data, width: "1000px", height: "300px", min:profile.startWeight, max:profile.targetWeight %>
+      <% end %>
     </div>
-  
+  <% end %>
 </div>
+
+<script>
+  $(function(){
+    $('.three-btn').click(function(){
+      $('.active').removeClass('active');
+      var clickedIndex = $('.three-btn').index($(this));
+      $('.mode').eq(clickedIndex).addClass('active');
+    });
+  });
+  </script>

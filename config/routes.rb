@@ -1,13 +1,17 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'home#top'
-  get 'users/index'
+  # get 'users/index'
   
-  get 'calendar/index'
+  # get 'calendar/index'
   
-  resources :home, only: [:top, :new, :tribia1]
-  resources :profile, only: :all
-  resources :blogs
+  resources :home, as: :homes, only: [:new, :create] do
+    collection do
+      get :top
+    end
+  end
+  resources :profile, as: :profiles, only: [:new, :create]
+  # resources :blogs
 
   
   # get 'home/top'

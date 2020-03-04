@@ -10,7 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_03_103658) do
+ActiveRecord::Schema.define(version: 2020_02_10_074751) do
+
+  create_table "balancesheets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "ingredient", null: false
+    t.float "protein"
+    t.float "carbo"
+    t.float "fat"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
+    t.date "time"
+  end
+
+  create_table "profiles", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "birthday", null: false
+    t.string "sex", null: false
+    t.float "height", null: false
+    t.float "weight", null: false
+    t.float "startWeight"
+    t.float "targetWeight"
+    t.string "activeLevel"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
+  end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
