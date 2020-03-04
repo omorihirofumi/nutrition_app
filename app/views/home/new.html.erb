@@ -15,20 +15,20 @@
       sex：<%= profile.sex %>
       </li>
       <li>
-      height：<%= profile.height %>
+      height：<%= profile.height %> cm
       </li>
       <li>
-      weight：<%= profile.weight %>
+      weight：<%= profile.weight %> kg
       </li>
       <li>
-      start weight：<%= profile.startWeight %>
+      start weight：<%= profile.startWeight %> kg
       </li>
       <li>
-      target weight：<%= profile.targetWeight %>
+      target weight：<%= profile.targetWeight %> kg
       </li>
       <li>
       <% @BMR = 13.397 * profile.weight + 4.799 * profile.height - 5.677 * @age + 88.362 %>
-      BMR：<%= @BMR.floor %>
+      BMR：<%= @BMR.floor %> kcal
       </li>
       <li>
       <% @activeLevel = profile.activeLevel.to_f %>
@@ -36,7 +36,7 @@
       </li>
       <li>
       <% @total = @BMR * @activeLevel %>
-      Total calories burned：<%= @total.floor %>
+      Calories burned：<%= @total.floor %> kcal
       </li>
     </div>
   </div>
@@ -60,11 +60,11 @@
       <div class="pfcsheet">
         <%= form_with(url:"/home", local:true) do |form| %>
           <%= form.date_field:time,class:"form-date" %>
-          <%= form.text_field:ingredient, placeholder:"ingredient",class:"ingredient" %>
+          <%= form.text_field:ingredient, placeholder:"食物",class:"ingredient" %>
           <div>
-          <%= form.number_field:protein, placeholder:"protein", class:"protein" %>
-          <%= form.number_field:carbo, placeholder:"carbo",class:"carbo" %>
-          <%= form.number_field:fat, placeholder:"fat",class:"fat" %>
+          <%= form.number_field:protein, placeholder:"蛋白質", class:"protein" %>
+          <%= form.number_field:carbo, placeholder:"糖質",class:"carbo" %>
+          <%= form.number_field:fat, placeholder:"脂質",class:"fat" %>
           <%= form.submit class:"send" %>
           </div>
         <% end %>
@@ -121,9 +121,48 @@
       
     </div>
     <div class="calendar">
-    momomo
+     <div class="calendar-all">
+      <div class="between">-食物-</div>
+      <div class="between">-蛋白質-</div>
+      <div class="between">-糖質-</div>
+      <div class="between">-脂質-</div>
+     </div>
+      <% @balancesheets.each do|balancesheet| %>
+      <div class="super-between">
+        <div class="between" >
+          <%= balancesheet.ingredient%>
+        </div>
+        <div class="between">
+          <%= balancesheet.protein %>g
+        </div>
+        <div class="between">
+          <%= balancesheet.carbo %>g
+        </div>
+        <div class="between">
+          <%= balancesheet.fat %>g
+        </div>
+      </div>
+      <% end %>
+      <div class="super-between">
+        <div class="between sum">
+          <%= "合計" %>
+        </div>
+        <div class="between sum">
+          <%= Balancesheet.all.sum(:protein) %>g
+        </div>
+        <div class="between sum">
+          <%= Balancesheet.all.sum(:carbo) %>g
+        </div>
+        <div class="between sum">
+          <%= Balancesheet.all.sum(:fat) %>g
+        </div>
+      </div>
+      <div class="allCalorie">
+        <% @allCalorie = Balancesheet.all.sum(:protein) * 4 + Balancesheet.all.sum(:carbo) * 4 + Balancesheet.all.sum(:fat) * 9 %>
+        総摂取カロリー：<%= @allCalorie.floor %>kcal
+      </div>
     </div>
-    </div>
+  </div>
     <div class="chart">
       <% @profiles.each do |profile| %>
         <%= line_chart @data, width: "1000px", height: "300px", min:profile.startWeight, max:profile.targetWeight %>

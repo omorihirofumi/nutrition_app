@@ -6,7 +6,7 @@ class ProfileController < ApplicationController
 
   def create
     Profile.create!(profile_params)
-    redirect_to root_path
+    redirect_to '/home/new'
   end
 
   private

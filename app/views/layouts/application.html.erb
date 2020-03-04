@@ -14,13 +14,13 @@
    <div class="all">
      <div class="header">
       <li>
-       <%= link_to('Daniel','/home/new') %>
+       <%= link_to('Daniel','/home/new',:style=>"color:white;") %>
       </li>
       <li>
-       Lv.56
+       <%= link_to('Lv.56','/profile/new',:style=>"color:white;") %>
       </li>
       <li>
-       <%= link_to('topage','/') %>
+       <%= link_to('topage','/',:style=>"color:white;") %>
       </li>
       <li id="btn">
        Trivia
@@ -54,13 +54,13 @@
       </li>
       <li>
       <p>
-       <%= link_to "Signup",new_user_registration_path %>
+       <%= link_to "Signup",new_user_registration_path,:style=>"color:white;" %>
       </p>
       <P>
-       <%= link_to "Login",new_user_session_path %>
+       <%= link_to "Login",new_user_session_path,:style=>"color:white;" %>
       </p>
       <p>
-       <%= link_to "Logout",destroy_user_session_path, method: :delete %>
+       <%= link_to "Logout",destroy_user_session_path, method: :delete,:style=>"color:white;" %>
       </p>
       </li>
     </div>

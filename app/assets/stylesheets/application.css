@@ -25,11 +25,13 @@ body{
   align-items: center;
   font-style:oblique;
   font-family:cursive;
+
 }
 
 li{
   list-style: none;
   padding: 0 45px;
+  
   
 }
 
@@ -82,12 +84,13 @@ footer{
 
 .profile{
   color: white;
-  border: solid 5px white;
+  border: solid 3px white;
   padding: 0.5em;
   border-radius: 0.5em;
   height: 600px;
   width: 330px;
   font-size: 20px;
+  background-image: url(https://beiz.jp/images_T/stone/stone_00083.jpg);
 }
 
 .profile-good{
@@ -115,13 +118,14 @@ footer{
 
 .pfc{
   color: white;
-  border: solid 5px white;
+  border: solid 3px white;
   padding: 0.5em;
   border-radius: 0.5em;
   height: 279px;
   width: 480px;
   margin-left: 20px;
   margin-bottom: 20px;
+  background-image: url(https://beiz.jp/images_T/stone/stone_00083.jpg);
 }
 
 .pfcsheet{
@@ -308,13 +312,43 @@ footer{
 
 .calendar{
   color: white;
-  border: solid 5px white;
+  border: solid 3px white;
   padding: 0.5em;
   border-radius: 0.5em;
   height: 279px;
   width: 480px;
   margin-left: 20px;
   margin-bottom: 20px;
+  background-image: url(https://beiz.jp/images_T/stone/stone_00083.jpg);
+}
+
+.calendar-all{
+  display: flex;
+  margin-bottom: 5px;
+  
+}
+
+.super-between{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.between{
+  width: 130px;
+  display: block;
+  text-align: center;
+}
+
+.sum{
+  font-size: 18px;
+  text-decoration: underline;
+  margin-top: 5px;
+}
+
+.allCalorie{
+  margin-left: 210px;
+  font-size: 20px;
+  text-decoration: underline;
 }
 
 
@@ -323,12 +357,14 @@ footer{
 
 
 .chart{
-  border: solid 5px white;
+  border: solid 3px white;
   padding: 0.5em;
   border-radius: 0.5em;
   margin-left: 20px;
   height: 279px;
-  
+  background: -moz-linear-gradient(top, #FFC778, #FFF);
+  background: -webkit-linear-gradient(top, #FFC778, #FFF);
+  background: linear-gradient(to bottom, #FFC778, #FFF);
 }
 
 

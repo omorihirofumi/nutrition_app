@@ -47,6 +47,7 @@
   font-family:cursive;
   width: 222px;
   height: 54px;
+  margin-left: 5px;
   }
 
   .height{
@@ -58,6 +59,7 @@
     font-family:cursive;
     width: 200px;
     height: 30px;
+    margin-left: 5px;
   }
 
   .weight{
@@ -69,6 +71,7 @@
     font-family:cursive;
     width: 200px;
     height: 30px;
+    margin-left: 5px;
   }
 
   .startWeight{
