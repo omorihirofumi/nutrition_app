@@ -10,7 +10,7 @@ Rails.application.routes.draw do
       get :top
     end
   end
-  resources :profile, as: :profiles, only: [:new, :create]
+  resources :profile, as: :profiles, only: [:new, :create, :edit, :update]
   # resources :blogs
 
   

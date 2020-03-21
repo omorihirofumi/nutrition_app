@@ -1,42 +1,39 @@
 <div class="contain">
  <% @profiles.each do |profile| %>
   <div class="profile">
-    <%= link_to('Profile','/profile/new', class:"profile-good") %>
+    <%= link_to('プロフィール編集',edit_profile_path(profile.id), class:"profile-good") %>
     <div class="profile-content">
-      <li>
-      name：Daniel
-      </li> 
       <li>
         <% require 'date' %>
         <% @age = (Date.today.strftime("%Y%m%d").to_i - profile.birthday)/10000.floor %>
-        age：<%= @age %>
+        年齢：<%= @age %>
       </li>
       <li>
-      sex：<%= profile.sex %>
+      性別：<%= profile.sex %>
       </li>
       <li>
-      height：<%= profile.height %> cm
+      身長：<%= profile.height %> cm
       </li>
       <li>
-      weight：<%= profile.weight %> kg
+      体重：<%= profile.weight %> kg
       </li>
       <li>
-      start weight：<%= profile.startWeight %> kg
+      開始体重：<%= profile.startWeight %> kg
       </li>
       <li>
-      target weight：<%= profile.targetWeight %> kg
+      目標体重：<%= profile.targetWeight %> kg
       </li>
       <li>
       <% @BMR = 13.397 * profile.weight + 4.799 * profile.height - 5.677 * @age + 88.362 %>
-      BMR：<%= @BMR.floor %> kcal
+      基礎代謝：<%= @BMR.floor %> kcal
       </li>
       <li>
       <% @activeLevel = profile.activeLevel.to_f %>
-      activelevel：<%= @activeLevel %>
+      活動レベル：<%= @activeLevel %>
       </li>
       <li>
       <% @total = @BMR * @activeLevel %>
-      Calories burned：<%= @total.floor %> kcal
+      消費カロリー：<%= @total.floor %> kcal
       </li>
     </div>
   </div>

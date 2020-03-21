@@ -1,0 +1,70 @@
+<div class="profile-sheet"> 
+       profilesheet
+     </div>
+     <p class="birthday-ex">
+       ※e.g. :August27,1991⇨19910827
+     </p>
+      <div class="profile-form">  
+        <%= form_with(model: @profile, local:true) do |form| %>
+          <div class="up-content">
+            <%= form.number_field:birthday, placeholder:"birthday",class:"birthday" %>
+            <%= form.select:sex,[['Male','Male'], ['Female', 'Female']], id:"sex"  %>
+            <%= form.number_field:height,step: "0.1", placeholder:"height",class:"height" %>
+            <%= form.number_field:weight,step: "0.1", placeholder:"weight",class:"weight" %>
+          </div>
+          <div class="down-content">
+            <%= form.number_field:startWeight,step: "0.1", placeholder:"startWeight",class:"startWeight" %>
+            <%= form.number_field:targetWeight,step: "0.1", placeholder:"targetWeight",class:"targetWeight" %>
+            <%= form.select:activeLevel,[['1.3','1.3'], ['1.5','1.5'], ['1.7','1.7']],id:"activeLevel" %>
+            <%= form.submit class:"save" %>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="active-level-box">
+        <div class="walk-box">
+          <div class="walk-box-up">activeLevel: 1.3</div>
+          <div class="walk-box-down">生活の大部分が座っている状態で、1日1時間以下の軽い運動(歩行等)以外は何もしていない。またデスクワークや休日に室内で過ごしている場合等に該当する</div>
+        </div>
+        <div class="run-box">
+          <div class="run-box-up">activeLevel: 1.5</div>
+          <div class="run-box-down">基本的には座り作業が多いが、職場内での移動や立ち作業などがある。また2~3時間程度のゆっくりした運動(通勤、買物、家事、軽いスポーツなど)をしている場合に該当する</div>
+        </div>
+        <div class="dash-box">
+          <div class="dash-box-up">activeLevel: 1.7</div>
+          <div class="dash-box-down">主に立ち作業や移動が多い仕事などしている場合。あるいはスポーツやトレーニングなどの活発な運動習慣を持っている場合などに該当する</div>
+        </div>
+      </div>
+
+      <script>
+        $('.walk-box').hover(
+          function(){
+            $(this).find('.walk-box-down').addClass('text-active');
+          },
+          function(){
+            $(this).find('.walk-box-down').removeClass('text-active');
+          }
+        );
+      </script>
+
+      <script>
+        $('.run-box').hover(
+          function(){
+            $(this).find('.run-box-down').addClass('text-active');
+          },
+          function(){
+            $(this).find('.run-box-down').removeClass('text-active');
+          }
+        );
+      </script>
+
+      <script>
+        $('.dash-box').hover(
+          function(){
+            $(this).find('.dash-box-down').addClass('text-active');
+          },
+          function(){
+            $(this).find('.dash-box-down').removeClass('text-active');
+          }
+        );
+      </script>
