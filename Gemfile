@@ -66,3 +66,6 @@ gem "simple_calendar", "~> 2.0"
 gem 'chartkick'
 gem 'devise'
 gem 'mysql2'
+group :production do
+  gem 'unicorn', '5.4.1'
+end
