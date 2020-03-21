@@ -86,7 +86,7 @@ class HomeController < ApplicationController
 
  def create
   Balancesheet.create!(balancesheet_params)
-  redirect_to root_path
+  redirect_to new_home_path
 end
 
 private
