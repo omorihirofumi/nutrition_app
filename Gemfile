@@ -66,6 +66,8 @@ gem "simple_calendar", "~> 2.0"
 gem 'chartkick'
 gem 'devise'
 gem 'mysql2'
+gem 'rspec-rails'
+gem 'factory_bot_rails'
 group :production do
   gem 'unicorn', '5.4.1'
 end
