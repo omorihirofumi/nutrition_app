@@ -14,53 +14,40 @@
    <div class="all">
      <div class="header">
       <li>
-       <%= link_to('Daniel','/home/new',:style=>"color:white;") %>
+       <%= link_to('マイページ','/home/new',:style=>"color:white;") %>
       </li>
       <li>
-       <%= link_to('Lv.56','/profile/new',:style=>"color:white;") %>
+       <%= link_to('プロフィール作成','/profile/new',:style=>"color:white;") %>
       </li>
       <li>
-       <%= link_to('topage','/',:style=>"color:white;") %>
+       <%= link_to('トップページ','/',:style=>"color:white;") %>
       </li>
       <li id="btn">
-       Trivia
+       豆知識
        <div class="text-content">
         <p>
-         trivia1
+         <%= link_to('正しいダイエットは２つだけ...',tribia1_homes_path,:style=>"color:white;") %>
         </p>
         <p>
-         tribia2
+         <%= link_to('なせ筋トレが続かないのか...',tribia2_homes_path,:style=>"color:white;") %>
         </p>
         <p>
-         trivia3
+         <%= link_to('痩せるために有酸素運動？...',tribia3_homes_path,:style=>"color:white;") %>
         </p>
         <p>
-         tribia4
+         <%= link_to('食べてないのに痩せない。その原因は...',tribia4_homes_path,:style=>"color:white;") %>
         </p>
-        <p>
-         tribia5
-        </P>
-        <p>
-        tribia6
-        </p>
-        <p>
-        tribia7
-        </p>
-        <p>
-        tribia8
-        </p>
-
        </div>
       </li>
       <li>
       <p>
-       <%= link_to "Signup",new_user_registration_path,:style=>"color:white;" %>
+       <%= link_to "新規登録",new_user_registration_path,:style=>"color:white;" %>
       </p>
       <P>
-       <%= link_to "Login",new_user_session_path,:style=>"color:white;" %>
+       <%= link_to "ログイン",new_user_session_path,:style=>"color:white;" %>
       </p>
       <p>
-       <%= link_to "Logout",destroy_user_session_path, method: :delete,:style=>"color:white;" %>
+       <%= link_to "ログアウト",destroy_user_session_path, method: :delete,:style=>"color:white;" %>
       </p>
       </li>
     </div>
@@ -76,11 +63,6 @@
      }
    );
    </script>
-
-   
-  
-  
-   <%# <footer></footer> %>
 
     <%= yield %>
   </body>

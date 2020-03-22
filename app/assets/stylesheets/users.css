@@ -1,3 +1,73 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.container{
+  font-size: 40px;
+  font-style:oblique;
+  font-family:cursive;
+  color: white;
+  margin-left: 500px;
+}
+
+h2{
+  margin-left: 150px;
+}
+
+.field{
+  font-size: 30px;
+  font-style:oblique;
+  font-family:cursive;
+  
+}
+
+#user_name{
+  border: solid 1px black;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  height: 30px;
+  width: 500px;
+  font-size: 20px;
+}
+
+#user_email{
+  border: solid 1px black;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  height: 30px;
+  width: 500px;
+  font-size: 20px;
+}
+
+#user_password{
+  border: solid 1px black;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  height: 30px;
+  width: 500px;
+  font-size: 20px;
+}
+
+#user_password_confirmation{
+  border: solid 1px black;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  height: 30px;
+  width: 500px;
+  font-size: 20px;
+}
+
+.actions{
+  font-size: 30px;
+  height: 100%;
+  width: 100%;
+}
+
+.switch{
+  font-size: 30px;
+  width: 50px;
+  height: 20px;
+  cursor: pointer;
+  background-color: white;
+  color: white;
+  border: solid 1px black;
+  padding: 0.5em;
+  border-radius: 25em;
+  border-bottom: solid 4px #627295;
+}

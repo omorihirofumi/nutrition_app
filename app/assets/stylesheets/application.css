@@ -7,7 +7,7 @@
 body{
   background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRHH9PKUvbnypvo2EKtNn5uFnBlG0LKSZoMEABDm8iDPp1vIkRZ);
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .header{
@@ -16,26 +16,18 @@ body{
   color: white;
   font-size: 20px;
   margin: 0 auto;
-  border: solid 5px white;
+  border: solid 2px white;
   padding: 0.5em;
   border-radius: 0.5em;
   max-width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-style:oblique;
-  font-family:cursive;
-
 }
 
 li{
   list-style: none;
   padding: 0 45px;
-  
-  
-}
-
-.btn{
 }
 
 .text-content{
@@ -46,7 +38,6 @@ li{
 .text-active{
   display: block;
   position: absolute;
-
 }
 
 .main{
@@ -65,8 +56,6 @@ li{
   width: 930px;
   background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRHH9PKUvbnypvo2EKtNn5uFnBlG0LKSZoMEABDm8iDPp1vIkRZ);
   box-shadow: inset 0 0 15px 15px black;
-  font-style:oblique;
-  font-family:cursive;
   padding-top: 200px;
 }
 
@@ -74,377 +63,4 @@ footer{
   background-color: black;
   height: 10px;
   width: 100%;
-
 }
-
-.contain{
-  display: flex;
-  margin-top: 50px;
-}
-
-.profile{
-  color: white;
-  border: solid 3px white;
-  padding: 0.5em;
-  border-radius: 0.5em;
-  height: 600px;
-  width: 330px;
-  font-size: 20px;
-  background-image: url(https://beiz.jp/images_T/stone/stone_00083.jpg);
-}
-
-.profile-good{
-  font-style:oblique;
-  font-family:cursive;
-  color: white;
-  font-size: 30px;
-  margin-left: 40px;
-}
-
-.profile-content{
-  padding-top: 15px;
-  line-height: 50px;
-  font-style:oblique;
-  font-family:cursive;
-}
-
-.right-content{
-  
-}
-
-.up-content{
-  display: flex;
-}
-
-.pfc{
-  color: white;
-  border: solid 3px white;
-  padding: 0.5em;
-  border-radius: 0.5em;
-  height: 279px;
-  width: 480px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  background-image: url(https://beiz.jp/images_T/stone/stone_00083.jpg);
-}
-
-.pfcsheet{
-  height: 65px;
-  
-}
-
-.pfc-btn{
-  display: flex;
-  margin-bottom: 5px;
-  margin-top: 20px;
-  font-style:oblique;
-  font-family:cursive;
-}
-
-.three-btn{
-  margin-left: 50px;
-  border: solid 1px black;
-  padding: 0.5em;
-  border-radius: 30em;
-  font-style:oblique;
-  font-family:cursive;
-  border-bottom: solid 4px #627295;
-  width: 75px;
-  height: 25px;
-  background-color: white;
-  color: black;
-  cursor: pointer;
-  text-align: center;
-}
-
-.advise{
-  display: flex;
-  margin-bottom: 25px;
-}
-
-.hard-advise{
-  margin-left: 35px;
-}
-
-.normal-advise{
-  margin-left: 30px;
-}
-
-.easy-advise{
-  margin-left: 30px;
-}
-
-.search{
-  color: white;
-  margin-left: 20px;
-}
-
-.form-date{
-  height: 30px;
-  font-size: 16px;
-  margin-left: 5px;
-  width:400;
-  font-style:oblique;
-  font-family:cursive;
-  border-radius: 0.3em;
-}
-
-.ingredient{
-  height: 30px;
-  font-size: 16px;
-  margin-left: 5px;
-  width:400;
-  font-style:oblique;
-  font-family:cursive;
-  border-radius: 0.3em;
-}
-
-.protein{
-  height: 20px;
-  font-size: 14px;
-  margin-left:175px;
-  width: 60px;
-  font-style:oblique;
-  font-family:cursive;
-  border-radius: 0.3em;
-}
-
-.carbo{
-  height: 20px;
-  font-size: 14px;
-  width:60px;
-  font-style:oblique;
-  font-family:cursive;
-  border-radius: 0.3em;
-}
-
-.fat{
-  height: 20px;
-  font-size: 14px;
-  width: 60px;
-  font-style:oblique;
-  font-family:cursive;
-  border-radius: 0.3em;
-}
-
-.send{ 
-    padding: 0.5em;
-    border-radius: 30em;
-    font-style:oblique;
-    font-family:cursive;
-    border-bottom: solid 4px #627295;
-    margin-left: 10px;
-    width: 60px;
-    height: 40px;
-    cursor: pointer;
-}
-
-.modes{
-  font-style:oblique;
-  font-family:cursive;
-  font-size: 20px;
-}
-
-.modes{
-  margin-top: 15px;
-}
-
-.mode{
-  display: none;
-}
-
-.active{
-  display: block;
-}
-
-.hard{
-  display: flex;
-  margin-left: 60px;
-}
-
-.hard-protein{
-  padding-left: 55px;
-}
-
-.hard-carbo{
-  padding-left: 37px;
-  
-}
-
-.hard-fat{
-  padding-left: 37px;
-  
-}
-
-.normal{
-  display: flex;
-  margin-left: 60px;
-}
-
-.normal-protein{
-  padding-left: 55px;
-}
-
-.normal-carbo{
-  padding-left: 37px;
-}
-
-.normal-fat{
-  padding-left: 37px;
-}
-
-.easy{
-  display: flex;
-  margin-left: 60px;
-}
-
-.easy-protein{
-  padding-left: 55px;
-}
-
-.easy-carbo{
-  padding-left: 37px;
-}
-
-.easy-fat{
-  padding-left: 37px;
-}
-
-.calendar{
-  color: white;
-  border: solid 3px white;
-  padding: 0.5em;
-  border-radius: 0.5em;
-  height: 279px;
-  width: 480px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  background-image: url(https://beiz.jp/images_T/stone/stone_00083.jpg);
-}
-
-.calendar-all{
-  display: flex;
-  margin-bottom: 5px;
-  
-}
-
-.super-between{
-  display: flex;
-  justify-content: flex-start;
-}
-
-.between{
-  width: 130px;
-  display: block;
-  text-align: center;
-}
-
-.sum{
-  font-size: 18px;
-  text-decoration: underline;
-  margin-top: 5px;
-}
-
-.allCalorie{
-  margin-left: 210px;
-  font-size: 20px;
-  text-decoration: underline;
-}
-
-
-
-
-
-
-.chart{
-  border: solid 3px white;
-  padding: 0.5em;
-  border-radius: 0.5em;
-  margin-left: 20px;
-  height: 279px;
-  background: -moz-linear-gradient(top, #FFC778, #FFF);
-  background: -webkit-linear-gradient(top, #FFC778, #FFF);
-  background: linear-gradient(to bottom, #FFC778, #FFF);
-}
-
-
-.container{
-  font-size: 40px;
-  font-style:oblique;
-  font-family:cursive;
-  color: white;
-  margin-left: 500px;
-}
-h2{
-  margin-left: 150px;
-}
-
-.field{
-  font-size: 30px;
-  font-style:oblique;
-  font-family:cursive;
-  
-}
-
-#user_name{
-  border: solid 1px black;
-  padding: 0.5em;
-  border-radius: 0.5em;
-  height: 30px;
-  width: 500px;
-  font-size: 20px;
-}
-
-#user_email{
-  border: solid 1px black;
-  padding: 0.5em;
-  border-radius: 0.5em;
-  height: 30px;
-  width: 500px;
-  font-size: 20px;
-}
-
-#user_password{
-  border: solid 1px black;
-  padding: 0.5em;
-  border-radius: 0.5em;
-  height: 30px;
-  width: 500px;
-  font-size: 20px;
-}
-
-
-#user_password_confirmation{
-  border: solid 1px black;
-  padding: 0.5em;
-  border-radius: 0.5em;
-  height: 30px;
-  width: 500px;
-  font-size: 20px;
-}
-
-#user_remember_me{
-  
-}
-
-.actions{
-  font-size: 30px;
-  height: 100%;
-  width: 100%;
-}
-
-
-.bbb{
-  font-size: 30px;
-  width: 50px;
-  height: 20px;
-  cursor: pointer;
-  background-color: white;
-  color: white;
-  border: solid 1px black;
-  padding: 0.5em;
-  border-radius: 25em;
-  border-bottom: solid 4px #627295;
-}
-
-

@@ -77,6 +77,18 @@ class HomeController < ApplicationController
     @selif = quote.sample
   end
 
+  def tribia1
+  end
+
+  def tribia2
+  end
+
+  def tribia3
+  end
+
+  def tribia4
+  end
+
  def new
   @balancesheet = Balancesheet.new
   @data = [['2020-01-20', 77.round(1)],['2020-01-21', 76.7.round(1)],['2020-01-22', 76.8.round(1)],['2020-01-23', 76.4.round(1)],['2020-01-24', 76.2.round(1)],['2020-01-25', 76.1.round(1)],['2020-01-26', 76.0.round(1)],['2020-01-27', 75.5.round(1)],['2020-01-28', 75.4.round(1)],['2020-01-29', 75.3.round(1)],['2020-01-30', 74.9.round(1)],['2020-01-31', 74.8.round(1)],['2020-02-01', 74.3.round(1)], ['2020-02-02', 74.0], ['2020-02-03', 73.8], ['2020-02-04', 73.2],['2020-02-05', 72],['2020-02-06', 71.5],['2020-02-07', 70.9],['2020-02-08', 70.2],['2020-02-09', 70],['2020-02-10', 68.7],['2020-02-11', 68],]
@@ -86,7 +98,7 @@ class HomeController < ApplicationController
 
  def create
   Balancesheet.create!(balancesheet_params)
-  redirect_to root_path
+  redirect_to new_home_path
 end
 
 private
