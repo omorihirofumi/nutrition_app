@@ -28,7 +28,7 @@ nutrition_app
 [![Image from Gyazo](https://i.gyazo.com/39cefff3ea6f0fc1eebd557ed430b239.gif)](https://gyazo.com/39cefff3ea6f0fc1eebd557ed430b239)
 
 ## 出品
-[![Image from GIF]((https://user-images.githubusercontent.com/59793675/77244462-43e19300-6c58-11ea-9cec-b5aff5f1431b.gif)]
+[![Image from GIF](https://user-images.githubusercontent.com/59793675/77244462-43e19300-6c58-11ea-9cec-b5aff5f1431b.gif)]
 
 # Usage
 * テストアカウントでログイン
