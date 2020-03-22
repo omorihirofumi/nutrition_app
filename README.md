@@ -30,7 +30,7 @@ nutrition_app
 ## 出品
 [![Image from GIF](https://user-images.githubusercontent.com/59793675/77245903-b60ca480-6c65-11ea-88d7-fabb667ee903.gif)
 
-<img src="https://user-images.githubusercontent.com/59793675/77244462-43e19300-6c58-11ea-9cec-b5aff5f1431b.gif" width="800" height="800">
+<img src="https://user-images.githubusercontent.com/59793675/77245903-b60ca480-6c65-11ea-88d7-fabb667ee903.gif" width="800" height="800">
 
 # Usage
 * テストアカウントでログイン
