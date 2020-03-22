@@ -7,7 +7,7 @@
 body{
   background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRHH9PKUvbnypvo2EKtNn5uFnBlG0LKSZoMEABDm8iDPp1vIkRZ);
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .header{
