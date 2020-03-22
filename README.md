@@ -30,6 +30,8 @@ nutrition_app
 ## 出品
 [![Image from GIF](https://user-images.githubusercontent.com/59793675/77244462-43e19300-6c58-11ea-9cec-b5aff5f1431b.gif =full)
 
+<img src="***https://user-images.githubusercontent.com/59793675/77244462-43e19300-6c58-11ea-9cec-b5aff5f1431b.gif***" width="***800***" height="***800***">
+
 # Usage
 * テストアカウントでログイン
   * トップページを始めとした各ページから出品ボタン押下→商品情報入力→商品出品
