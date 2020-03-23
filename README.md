@@ -28,6 +28,13 @@ nutrition_app
 * ページ共通
   * 各ページに遷移するリンクを含んだヘッダー機能実装
 
+# Demo
+## プロフィール入力
+<img src="https://user-images.githubusercontent.com/59793675/77247616-363b0600-6c76-11ea-9ba5-7217b91b5ad6.gif" width="640" height="480">
+
+## マイページ
+<img src="https://user-images.githubusercontent.com/59793675/77247632-5074e400-6c76-11ea-8201-ac0802f059bc.gif" width="640" height="480">
+
 # note
 ## 補足知識
 * 1kg = 7200kcal 
@@ -35,14 +42,14 @@ nutrition_app
   例：摂取カロリー2000kcal - 消費カロリー2720kcal = -720kcal × 10日間 → -7200kcal(1kg減)
 * カロリーのある栄養素(三大栄養素)
   <br>
-  ・タンパク質 4kcal/1g 例：肉、卵、魚など
+  ・タンパク質 4kcal/1g (例：肉、卵、魚など)
   <br>
-  ・糖質 4kcal/1g 例：米、パン、パスタなど
+  ・糖質 4kcal/1g (例：米、パン、パスタなど)
   <br>
-  ・脂質 9kcal/1g 例：バター、肉の脂身、
+  ・脂質 9kcal/1g (例：バター、肉の脂身、アーモンドなど)
 * リバウンドしづらく、筋肉が落ちにくい三大栄養素の摂取カロリーバランス：
   <br>
-  タンパク質40%、糖質40%、脂質20%
+  タンパク質40%：糖質40%：脂質20%
 * 本アプリではカロリー制限による「脂質制限」を採用しています。
 
 ## 工夫した点
@@ -70,15 +77,6 @@ nutrition_app
 * カレンダー機能実装。日付を選択すればその日の摂取した物がわかるようにしたい。
 * 日毎の体重入力機能。グラフにて表示したい。
 
-
-
-
-# Demo
-## プロフィール入力
-<img src="https://user-images.githubusercontent.com/59793675/77247616-363b0600-6c76-11ea-9ba5-7217b91b5ad6.gif" width="640" height="480">
-
-## マイページ
-<img src="https://user-images.githubusercontent.com/59793675/77247632-5074e400-6c76-11ea-8201-ac0802f059bc.gif" width="640" height="480">
 
 # Usage
 * テストアカウントでログイン
